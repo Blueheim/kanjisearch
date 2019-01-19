@@ -1,11 +1,20 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../Card';
 
-const CardList = ({ robots }) => {
+const CardList = ({ kanjis }) => {
   return (
     <div>
-      {robots.map((user, i) => {
-        return <Card key={i} id={robots[i].id} name={robots[i].name} email={robots[i].email} />;
+      {kanjis.map((kanji, i) => {
+        return (
+          <Card
+            key={i}
+            id={kanjis[i].id}
+            meaning={kanjis[i].meaning.english}
+            character={kanjis[i].character}
+            kunyomi={kanjis[i].kunyomi}
+            onyomi={kanjis[i].onyomi}
+          />
+        );
       })}
     </div>
   );

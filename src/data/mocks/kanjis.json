@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "character": "水",
+    "meaning": {
+      "english": ["water"]
+    },
+    "kunyomi": ["みず, みず-"],
+    "onyomi": ["スイ"]
+  },
+  { "id": 2, "character": "火", "meaning": { "english": ["fire"] }, "kunyomi": ["ひ", "-び", "ほ-"], "onyomi": ["カ"] },
+  {
+    "id": 3,
+    "character": "木",
+    "meaning": { "english": ["tree", "wood"] },
+    "kunyomi": ["き", "こ-"],
+    "onyomi": ["ボク", "モク"]
+  },
+  {
+    "id": 4,
+    "character": "石",
+    "meaning": {
+      "english": ["stone"]
+    },
+    "kunyomi": ["いし"],
+    "onyomi": ["セキ", "シャク", "コク"]
+  },
+  {
+    "id": 5,
+    "character": "金",
+    "meaning": {
+      "english": ["gold", "money"]
+    },
+    "kunyomi": ["かね", "かな", "がね"],
+    "onyomi": ["キン", "コン", "ゴン"]
+  }
+]
