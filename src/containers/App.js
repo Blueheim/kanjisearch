@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CardList from '../components/Card/List/CardList';
 import SearchBox from '../components/Search/SearchBox';
-import Scroll from '../components/UI/Scroll';
-import getData from '../util/getData';
 import { setSearchField, requestKanjis } from '../actions';
 
 const mapStateToProps = state => {
