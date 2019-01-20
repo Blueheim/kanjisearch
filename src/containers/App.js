@@ -1,44 +1,54 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import CardList from '../components/Card/List/CardList';
 import SearchBox from '../components/Search/SearchBox';
 import Scroll from '../components/UI/Scroll';
 import getData from '../util/getData';
+import { setSearchField, requestKanjis } from '../actions';
+
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchKanjis.searchField,
+    kanjis: state.requestKanjis.kanjis,
+    isPending: state.requestKanjis.isPending,
+    error: state.requestKanjis.error,
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    handleSearchChange: event => dispatch(setSearchField(event.target.value)),
+    requestKanjis: () => dispatch(requestKanjis()),
+  };
+};
 
 class App extends Component {
-  state = {
-    kanjis: [],
-    searchfield: '',
-  };
-
   componentDidMount() {
-    getData('GET_ALL').subscribe(fetchRes => {
-      console.log(fetchRes);
-      this.setState({ kanjis: fetchRes });
-    });
+    this.props.requestKanjis();
   }
 
-  handleSearchChange = event => {
-    this.setState({ searchfield: event.target.value });
-  };
-
   render() {
-    const { kanjis, searchfield } = this.state;
+    const { searchField, handleSearchChange, kanjis, isPending } = this.props;
+
     const filteredKanjis = kanjis.filter(kanji => {
       return kanji.meaning.english
         .join(' ')
         .toLowerCase()
-        .includes(searchfield.toLowerCase());
+        .includes(searchField.toLowerCase());
     });
-    return !kanjis.length ? (
+    return isPending ? (
       <h1>Loading</h1>
     ) : (
       <div className="m-tx-c">
         <h1 className="title">Kanjis</h1>
-        <SearchBox searchChange={this.handleSearchChange} />
+        <SearchBox searchChange={handleSearchChange} />
         <CardList kanjis={filteredKanjis} />
       </div>
     );
   }
 }
 
-export default App;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

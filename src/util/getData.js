@@ -8,7 +8,7 @@ const mocks = {
 };
 
 const getEndpoint = endpointName => {
-  return endpoints.api[endpointName];
+  return endpoints[endpointName];
 };
 
 const getMock = mockName => {
@@ -17,7 +17,8 @@ const getMock = mockName => {
 
 const getData = name => {
   if (process.env.REACT_APP_MOCK) {
-    return from([getMock(name)]);
+    const data = getMock(name) || [];
+    return from([data]);
   } else {
     return httpObservable(getEndpoint(name));
   }

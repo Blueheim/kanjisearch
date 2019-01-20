@@ -5,7 +5,7 @@
     "meaning": {
       "english": ["water"]
     },
-    "kunyomi": ["みず, みず-"],
+    "kunyomi": ["みず", "みず-"],
     "onyomi": ["スイ"]
   },
   { "id": 2, "character": "火", "meaning": { "english": ["fire"] }, "kunyomi": ["ひ", "-び", "ほ-"], "onyomi": ["カ"] },

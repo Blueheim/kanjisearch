@@ -9,4 +9,16 @@
 
 .Lecture {
   flex-grow: 1;
+
+  &:not(:last-child) {
+    border-right: 1px solid currentColor;
+  }
+}
+
+.Spelling {
+  flex-grow: 1;
+
+  &:not(:last-child) {
+    border-right: 1px solid currentColor;
+  }
 }
