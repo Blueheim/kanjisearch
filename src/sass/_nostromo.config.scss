@@ -1,2 +1,14 @@
 @import 'node_modules/nostromo-css/sass/helpers/variables';
 @import 'node_modules/nostromo-css/sass/helpers/theme';
+
+$primary: #e71d36;
+$secondary: #2e294e;
+$tertiary: #56494e;
+
+$myColors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+);
+
+$colors: map-merge($colors, $myColors);

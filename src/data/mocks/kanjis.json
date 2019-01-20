@@ -33,5 +33,50 @@
     },
     "kunyomi": ["かね", "かな", "がね"],
     "onyomi": ["キン", "コン", "ゴン"]
+  },
+  {
+    "id": 6,
+    "character": "日",
+    "meaning": {
+      "english": ["day", "sun", "Japan", "counter for days"]
+    },
+    "kunyomi": ["ひ", "-び", "-か"],
+    "onyomi": ["ニチ", "ジツ"]
+  },
+  {
+    "id": 7,
+    "character": "月",
+    "meaning": {
+      "english": ["month", "moon"]
+    },
+    "kunyomi": ["つき"],
+    "onyomi": ["ゲツ", "ガツ"]
+  },
+  {
+    "id": 8,
+    "character": "年",
+    "meaning": {
+      "english": ["year", "counter for years"]
+    },
+    "kunyomi": ["とし"],
+    "onyomi": ["ネン"]
+  },
+  {
+    "id": 9,
+    "character": "早",
+    "meaning": {
+      "english": ["early", "fast"]
+    },
+    "kunyomi": ["はや.い", "はや", "はや-", "はや.まる", "はや.める", "さ-"],
+    "onyomi": ["ソウ", "サッ"]
+  },
+  {
+    "id": 10,
+    "character": "夕",
+    "meaning": {
+      "english": ["evening"]
+    },
+    "kunyomi": ["ゆう"],
+    "onyomi": ["セキ"]
   }
 ]
