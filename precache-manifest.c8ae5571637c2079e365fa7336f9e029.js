@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/kanjisearch/static/js/runtime~main.f0e9c560.js"
   },
   {
-    "revision": "bc5e915745f4fe97baee",
-    "url": "/kanjisearch/static/js/main.bc5e9157.chunk.js"
+    "revision": "5e38d05d9e8f76232372",
+    "url": "/kanjisearch/static/js/main.5e38d05d.chunk.js"
   },
   {
     "revision": "9508254f36fda41d7529",
     "url": "/kanjisearch/static/js/1.9508254f.chunk.js"
   },
   {
-    "revision": "bc5e915745f4fe97baee",
+    "revision": "5e38d05d9e8f76232372",
     "url": "/kanjisearch/static/css/main.c2fc0084.chunk.css"
   },
   {
-    "revision": "8a10da863ce6861c7108ebf9fc04ee15",
+    "revision": "5bb62bcdbd1da26d5c3139d43abfd08c",
     "url": "/kanjisearch/index.html"
   }
 ];

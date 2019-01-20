@@ -1,13 +1,13 @@
 {
   "main.css": "/kanjisearch/static/css/main.c2fc0084.chunk.css",
-  "main.js": "/kanjisearch/static/js/main.bc5e9157.chunk.js",
-  "main.js.map": "/kanjisearch/static/js/main.bc5e9157.chunk.js.map",
+  "main.js": "/kanjisearch/static/js/main.5e38d05d.chunk.js",
+  "main.js.map": "/kanjisearch/static/js/main.5e38d05d.chunk.js.map",
   "static/js/1.9508254f.chunk.js": "/kanjisearch/static/js/1.9508254f.chunk.js",
   "static/js/1.9508254f.chunk.js.map": "/kanjisearch/static/js/1.9508254f.chunk.js.map",
   "runtime~main.js": "/kanjisearch/static/js/runtime~main.f0e9c560.js",
   "runtime~main.js.map": "/kanjisearch/static/js/runtime~main.f0e9c560.js.map",
   "static/css/main.c2fc0084.chunk.css.map": "/kanjisearch/static/css/main.c2fc0084.chunk.css.map",
   "index.html": "/kanjisearch/index.html",
-  "precache-manifest.d69605ebd3659044bf9a3891029b334b.js": "/kanjisearch/precache-manifest.d69605ebd3659044bf9a3891029b334b.js",
+  "precache-manifest.c8ae5571637c2079e365fa7336f9e029.js": "/kanjisearch/precache-manifest.c8ae5571637c2079e365fa7336f9e029.js",
   "service-worker.js": "/kanjisearch/service-worker.js"
 }
