@@ -1,8 +1,17 @@
 import React from 'react';
 import classes from './Card.module.scss';
 import classNames from 'classnames';
+import { IKanji } from '../../types/kanji';
 
-const Card = ({ id, character, meaning, kunyomi, onyomi }) => {
+interface ICardStatelessProps {
+  id: number;
+  character: string;
+  meaning: string[];
+  kunyomi: string[];
+  onyomi: string[];
+}
+
+const Card: React.SFC<ICardStatelessProps> = ({ id, character, meaning, kunyomi, onyomi }) => {
   const cardClasses = classNames('box', 'm-bd-xt', 'm-rd-xt', 'm-mg-xt', classes.Card);
   const headerClasses = classNames('m-tx-c', 'm-wt-700', 'm-tertiary');
   const bodyClasses = classNames('side__header', 'm-fx-cl-c-c', 'm-tx-primary', classes.Kanji);
@@ -10,19 +19,19 @@ const Card = ({ id, character, meaning, kunyomi, onyomi }) => {
   const spellingClasses = classNames('m-wt-900', classes.Spelling);
   const meaningClasses = classNames(classes.Meaning);
 
-  const meaningDisplay = meaning.map((meaning, i) => (
+  const meaningDisplay = meaning.map((value: string, i: number) => (
     <span className={meaningClasses} key={i}>
-      {meaning}
+      {value}
     </span>
   ));
 
-  const kunyomiDisplay = kunyomi.map((spelling, i) => (
+  const kunyomiDisplay = kunyomi.map((spelling: string, i: number) => (
     <div className={spellingClasses} key={i}>
       <span>{spelling}</span>
     </div>
   ));
 
-  const onyomiDisplay = onyomi.map((spelling, i) => (
+  const onyomiDisplay = onyomi.map((spelling: string, i: number) => (
     <div className={spellingClasses} key={i}>
       <span>{spelling}</span>
     </div>

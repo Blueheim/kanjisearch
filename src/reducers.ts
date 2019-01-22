@@ -1,15 +1,17 @@
+import { IStateSearch, IStateKanjis } from "./types/kanji";
+
 import {
   CHANGE_SEARCH_FIELD,
   REQUEST_KANJIS_PENDING,
   REQUEST_KANJIS_SUCCESS,
-  REQUEST_KANJIS_FAILED,
-} from './constants';
+  REQUEST_KANJIS_FAILED
+} from "./constants";
 
-const initialStateSearch = {
-  searchField: '',
+const initialStateSearch: IStateSearch = {
+  searchField: ""
 };
 
-export const searchKanjis = (state = initialStateSearch, action = {}) => {
+export const searchKanjis = (state = initialStateSearch, action: any = {}) => {
   switch (action.type) {
     case CHANGE_SEARCH_FIELD:
       return { ...state, searchField: action.payload };
@@ -18,13 +20,13 @@ export const searchKanjis = (state = initialStateSearch, action = {}) => {
   }
 };
 
-const initialStateKanjis = {
+const initialStateKanjis: IStateKanjis = {
   isPending: false,
   kanjis: [],
-  error: '',
+  error: ""
 };
 
-export const requestKanjis = (state = initialStateKanjis, action = {}) => {
+export const requestKanjis = (state = initialStateKanjis, action: any = {}) => {
   switch (action.type) {
     case REQUEST_KANJIS_PENDING:
       return { ...state, isPending: true };
